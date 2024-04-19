@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+    <article id="1">
+        <title>New Game Release: Fantasy World</title>
+        <author>John Doe</author>
+        <date>2024-04-18</date>
+        <category>New Releases</category>
+        <content>Details about the new game release...</content>
+    </article>
+    <article id="2">
+        <title>Update Patch for Adventure Quest</title>
+        <author>Jane Smith</author>
+        <date>2024-04-17</date>
+        <category>Updates</category>
+        <content>Latest patch details for Adventure Quest...</content>
+    </article>
+    <!-- Add more articles as needed -->
+</articles>
