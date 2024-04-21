@@ -1,0 +1,4 @@
+1. HTML has around 3,3k characters right now (it needs 5k)
+2. CSS has too many lines (needs to be max 100 lines)
+3. Add more articles and update XML files based on them
+and more that i haven't gotten to yet
