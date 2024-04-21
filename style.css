@@ -15,6 +15,12 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+header img.logo {
+    height: 100px;
+    vertical-align: middle;
+    /*margin-right: 2px;  // Adds some space between the logo and header text or nav*/
+}
+
 h1 {
     font-size: 2.5em; /* Larger font size for the main title */
     color: #2575fc; /* A vibrant blue color for the title */
