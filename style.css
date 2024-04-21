@@ -34,19 +34,20 @@ h1 {
     margin-bottom: 20px; /* Extra space before the navigation */
 }
 
-nav ul {
-    list-style: none;
+nav ul, footer ul {
+    list-style-type: none; /* Removes bullet points */
     padding: 0;
-    text-align: center;
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the list if needed */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+nav ul li, footer ul li {
+    display: inline; /* Inline display for horizontal list */
+    margin-right: 10px; /* Space between items */
 }
 
-nav ul li a {
-    color: #fff;
+nav ul li a, footer ul li a {
+    color: inherit;
     text-decoration: none;
     font-weight: bold;
     background-color: #333; /* Dark grey for menu items */
