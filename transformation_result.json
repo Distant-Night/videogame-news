@@ -1,1 +1,64 @@
-{ "articles": [{"id": "1", "title": "New Game Release: Fantasy World", "author": "John Doe", "published": "not available"}, {"id": "2", "title": "Update Patch for Adventure Quest", "author": "Jane Smith", "published": "not available"} ] }
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "New Game Release: Kingdom Come Deliverance 2",
+      "author": "Dmytro Bailuk",
+      "date": "2024-04-18",
+      "category": "New Releases",
+      "summary": "The sequel to the Czech historical RPG is here, featuring an overhauled combat system and expanded world.",
+      "details": [
+        "Delve into a narrative rich in history and enhanced with a dynamic ecosystem that challenges even veteran players.",
+        "Explore vast landscapes and engage in more complex interactions with characters driven by sophisticated AI."
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Overwatch 2 April Balance Patch",
+      "author": "Alikhanov Miras",
+      "date": "2024-04-17",
+      "category": "Updates",
+      "summary": "Blizzard's latest patch introduces a new map and adjusts character abilities to enhance gameplay balance.",
+      "details": [
+        "The update aims to refine gameplay mechanics, focusing on fair play and competitive integrity.",
+        "Overwatch enthusiasts will find the game increasingly rewarding with these thoughtful balance tweaks."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Tips and Tricks for Winning in Fortnite",
+      "author": "Jane Doe",
+      "date": "2024-04-19",
+      "category": "Strategy Guides",
+      "summary": "Discover expert building strategies and weapon selection to dominate in Fortnite's dynamic battlefields.",
+      "details": [
+        "Master the art of quick build battles and learn the secrets behind successful loot strategies that can give you an edge over the competition.",
+        "This guide offers essential tactics that are crucial for survival and victory."
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Cyberpunk 2077 Expansion Revealed",
+      "author": "Casey Smith",
+      "date": "2024-04-20",
+      "category": "Announcements",
+      "summary": "CD Projekt Red unveils a massive expansion for Cyberpunk 2077, promising new storylines and tech upgrades.",
+      "details": [
+        "The expansion promises to address previous gameplay issues and expand the narrative to include new districts within Night City.",
+        "Fans can expect enhanced graphics and more immersive story elements that deepen the Cyberpunk experience."
+      ]
+    },
+    {
+      "id": "5",
+      "title": "League of Legends Season Update",
+      "author": "Emily Nguyen",
+      "date": "2024-04-22",
+      "category": "Game Updates",
+      "summary": "Riot Games rolls out the new season update for League of Legends, featuring major gameplay changes and character tweaks.",
+      "details": [
+        "This update introduces new champions and rebalances existing ones to shake up the meta, aiming to improve the competitive scene and overall player engagement.",
+        "Innovative champion designs and smarter gameplay mechanics enhance the tactical aspects of the game."
+      ]
+    }
+  ]
+}

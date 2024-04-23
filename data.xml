@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<articles>
-    <article id="1">
-        <title>New Game Release: Fantasy World</title>
-        <author>John Doe</author>
-        <date>2024-04-18</date>
-        <category>New Releases</category>
-        <content>Details about the new game release...</content>
-    </article>
-    <article id="2">
-        <title>Update Patch for Adventure Quest</title>
-        <author>Jane Smith</author>
-        <date>2024-04-17</date>
-        <category>Updates</category>
-        <content>Latest patch details for Adventure Quest...</content>
-    </article>
-    <!-- Add more articles as needed -->
-</articles>
+<newsSite>
+    <articles>
+        <article id="1">
+            <title>New Game Release: Kingdom Come Deliverance 2</title>
+            <metadata>
+                <author>Dmytro Bailuk</author>
+                <date>2024-04-18</date>
+                <category>New Releases</category>
+            </metadata>
+            <content>
+                <summary>The sequel to the Czech historical RPG is here, featuring an overhauled combat system and expanded world.</summary>
+                <details>
+                    <point>Delve into a narrative rich in history and enhanced with a dynamic ecosystem that challenges even veteran players.</point>
+                    <point>Explore vast landscapes and engage in more complex interactions with characters driven by sophisticated AI.</point>
+                </details>
+            </content>
+        </article>
+        <article id="2">
+            <title>Overwatch 2 April Balance Patch</title>
+            <metadata>
+                <author>Alikhanov Miras</author>
+                <date>2024-04-17</date>
+                <category>Updates</category>
+            </metadata>
+            <content>
+                <summary>Blizzard's latest patch introduces a new map and adjusts character abilities to enhance gameplay balance.</summary>
+                <details>
+                    <point>The update aims to refine gameplay mechanics, focusing on fair play and competitive integrity.</point>
+                    <point>Overwatch enthusiasts will find the game increasingly rewarding with these thoughtful balance tweaks.</point>
+                </details>
+            </content>
+        </article>
+        <article id="3">
+            <title>Tips and Tricks for Winning in Fortnite</title>
+            <metadata>
+                <author>Jane Doe</author>
+                <date>2024-04-19</date>
+                <category>Strategy Guides</category>
+            </metadata>
+            <content>
+                <summary>Discover expert building strategies and weapon selection to dominate in Fortnite's dynamic battlefields.</summary>
+                <details>
+                    <point>Master the art of quick build battles and learn the secrets behind successful loot strategies that can give you an edge over the competition.</point>
+                    <point>This guide offers essential tactics that are crucial for survival and victory.</point>
+                </details>
+            </content>
+        </article>
+        <article id="4">
+            <title>Cyberpunk 2077 Expansion Revealed</title>
+            <metadata>
+                <author>Casey Smith</author>
+                <date>2024-04-20</date>
+                <category>Announcements</category>
+            </metadata>
+            <content>
+                <summary>CD Projekt Red unveils a massive expansion for Cyberpunk 2077, promising new storylines and tech upgrades.</summary>
+                <details>
+                    <point>The expansion promises to address previous gameplay issues and expand the narrative to include new districts within Night City.</point>
+                    <point>Fans can expect enhanced graphics and more immersive story elements that deepen the Cyberpunk experience.</point>
+                </details>
+            </content>
+        </article>
+        <article id="5">
+            <title>League of Legends Season Update</title>
+            <metadata>
+                <author>Emily Nguyen</author>
+                <date>2024-04-22</date>
+                <category>Game Updates</category>
+            </metadata>
+            <content>
+                <summary>Riot Games rolls out the new season update for League of Legends, featuring major gameplay changes and character tweaks.</summary>
+                <details>
+                    <point>This update introduces new champions and rebalances existing ones to shake up the meta, aiming to improve the competitive scene and overall player engagement.</point>
+                    <point>Innovative champion designs and smarter gameplay mechanics enhance the tactical aspects of the game.</point>
+                </details>
+            </content>
+        </article>
+    </articles>
+</newsSite>

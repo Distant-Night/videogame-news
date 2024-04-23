@@ -2,28 +2,32 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
         <xsl:text>{ "articles": [</xsl:text>
-        <xsl:for-each select="articles/article">
-            <xsl:sort select="title"/> <!-- Sorting articles by title -->
+        <xsl:for-each select="newsSite/articles/article">
+            <xsl:sort select="title"/>
             <xsl:if test="position() != 1">
                 <xsl:text>, </xsl:text>
             </xsl:if>
             <xsl:text>{</xsl:text>
             <xsl:text>"id": "</xsl:text><xsl:value-of select="@id"/><xsl:text>", </xsl:text>
             <xsl:text>"title": "</xsl:text><xsl:value-of select="title"/><xsl:text>", </xsl:text>
-            <xsl:text>"author": "</xsl:text><xsl:value-of select="author"/><xsl:text>"</xsl:text>
-            <xsl:choose>
-                <xsl:when test="published">
-                    <xsl:text>, "published": "</xsl:text>
-                    <xsl:value-of select="published"/>
-                    <xsl:text>"</xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>, "published": "not available"</xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
+            <xsl:text>"author": "</xsl:text><xsl:value-of select="metadata/author"/><xsl:text>", </xsl:text>
+            <xsl:text>"date": "</xsl:text><xsl:value-of select="metadata/date"/><xsl:text>", </xsl:text>
+            <xsl:text>"category": "</xsl:text><xsl:value-of select="metadata/category"/><xsl:text>", </xsl:text>
+            <xsl:text>"summary": "</xsl:text><xsl:value-of select="content/summary"/><xsl:text>", </xsl:text>
+            <xsl:text>"details": [</xsl:text>
+            <xsl:for-each select="content/details/point">
+                <xsl:if test="position() != 1">
+                    <xsl:text>, </xsl:text>
+                </xsl:if>
+                <xsl:text>"</xsl:text>
+                <xsl:value-of select="."/>
+                <xsl:text>"</xsl:text>
+            </xsl:for-each>
+            <xsl:text>]</xsl:text>
             <xsl:text>}</xsl:text>
         </xsl:for-each>
         <xsl:text> ] }</xsl:text>
     </xsl:template>
 </xsl:stylesheet>
+
 
