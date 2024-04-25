@@ -5,8 +5,10 @@
             <title>New Game Release: Kingdom Come Deliverance 2</title>
             <metadata>
                 <author>Dmytro Bailuk</author>
-                <date>2024-04-18</date>
+                <datePublished>2024-04-18</datePublished>
+                <dateModified>2024-04-18</dateModified>
                 <category>New Releases</category>
+                <publisher>outGame</publisher>
             </metadata>
             <content>
                 <summary>The sequel to the Czech historical RPG is here, featuring an overhauled combat system and expanded world.</summary>
@@ -20,8 +22,10 @@
             <title>Overwatch 2 April Balance Patch</title>
             <metadata>
                 <author>Alikhanov Miras</author>
-                <date>2024-04-17</date>
+                <datePublished>2024-04-17</datePublished>
+                <dateModified>2024-04-17</dateModified>
                 <category>Updates</category>
+                <publisher>outGame</publisher>
             </metadata>
             <content>
                 <summary>Blizzard's latest patch introduces a new map and adjusts character abilities to enhance gameplay balance.</summary>
@@ -35,8 +39,10 @@
             <title>Tips and Tricks for Winning in Fortnite</title>
             <metadata>
                 <author>Jane Doe</author>
-                <date>2024-04-19</date>
+                <datePublished>2024-04-19</datePublished>
+                <dateModified>2024-04-19</dateModified>
                 <category>Strategy Guides</category>
+                <publisher>outGame</publisher>
             </metadata>
             <content>
                 <summary>Discover expert building strategies and weapon selection to dominate in Fortnite's dynamic battlefields.</summary>
@@ -50,8 +56,10 @@
             <title>Cyberpunk 2077 Expansion Revealed</title>
             <metadata>
                 <author>Casey Smith</author>
-                <date>2024-04-20</date>
+                <datePublished>2024-04-20</datePublished>
+                <dateModified>2024-04-20</dateModified>
                 <category>Announcements</category>
+                <publisher>outGame</publisher>
             </metadata>
             <content>
                 <summary>CD Projekt Red unveils a massive expansion for Cyberpunk 2077, promising new storylines and tech upgrades.</summary>
@@ -65,8 +73,10 @@
             <title>League of Legends Season Update</title>
             <metadata>
                 <author>Emily Nguyen</author>
-                <date>2024-04-22</date>
+                <datePublished>2024-04-22</datePublished>
+                <dateModified>2024-04-22</dateModified>
                 <category>Game Updates</category>
+                <publisher>outGame</publisher>
             </metadata>
             <content>
                 <summary>Riot Games rolls out the new season update for League of Legends, featuring major gameplay changes and character tweaks.</summary>
@@ -77,4 +87,62 @@
             </content>
         </article>
     </articles>
+
+
+    <reviews>
+        <review id="1">
+            <title>"Kingdom Come Deliverance 2" - A New Adventure Awaits</title>
+            <metadata>
+                <author>Toby Fox</author>
+                <datePublished>2024-04-20</datePublished>
+                <gameReviewed>Kingdom Come Deliverance 2</gameReviewed>
+                <ratingValue>4.5</ratingValue>
+                <bestRating>5</bestRating>
+                <worstRating>1</worstRating>
+                <publisher>outGame</publisher>
+            </metadata>
+            <reviewBody>
+                <summary>Stunning graphics and an engaging storyline make this RPG a must-play.</summary>
+                <details>
+                    <point>Dive into a meticulously crafted world that blurs the line between reality and virtual, bringing medieval history to life with unprecedented detail.</point>
+                </details>
+            </reviewBody>
+        </review>
+        <review id="2">
+            <title>Exploring the Universe in 'Starfield'</title>
+            <metadata>
+                <author>Lebron James</author>
+                <datePublished>2024-04-21</datePublished>
+                <gameReviewed>Starfield</gameReviewed>
+                <ratingValue>4.2</ratingValue>
+                <bestRating>5</bestRating>
+                <worstRating>1</worstRating>
+                <publisher>outGame</publisher>
+            </metadata>
+            <reviewBody>
+                <summary>Bethesda's latest RPG offers a vast universe to explore, rich with diverse planets and lifeforms.</summary>
+                <details>
+                    <point>Experience the thrill of space exploration and the strategic depth of building alliances across galaxies.</point>
+                </details>
+            </reviewBody>
+        </review>
+        <review id="3">
+            <title>"League of Legends Season Update" - Strategic Refresh</title>
+            <metadata>
+                <author>Conor McGregor</author>
+                <datePublished>2024-04-22</datePublished>
+                <gameReviewed>League of Legends</gameReviewed>
+                <ratingValue>4.3</ratingValue>
+                <bestRating>5</bestRating>
+                <worstRating>1</worstRating>
+                <publisher>outGame</publisher>
+            </metadata>
+            <reviewBody>
+                <summary>The latest season update brings refreshing changes to the strategic depth of League of Legends.</summary>
+                <details>
+                    <point>With innovative champion designs and smarter gameplay mechanics, this update enhances the tactical aspects of the game, providing a fresh experience for veterans and newcomers alike.</point>
+                </details>
+            </reviewBody>
+        </review>
+    </reviews>
 </newsSite>

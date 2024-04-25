@@ -20,13 +20,13 @@ Specification
     Valid HTML5 and CSS
     Syntactically and semantically correct
     NO frameworks and templates are allowed
-    Metadata descriptions
+    Metadata descriptions (CHECK)
         basic meta elements in head
         Microdata (+ schema.org)
             min. 7 properties
             min. 2different itemtypes
             or equivalent using JSON-LD
-    opengraph.org for Facebook
+            opengraph.org for Facebook
     Contains properly used at least each of the following elements
         head, meta, title, header, section, article, aside, time, footer, p, ul/ol, li, a, img, h1, h2, h3
     Files and names
@@ -37,7 +37,7 @@ Specification
     1x main XML file, including data
         5 demonstrational records (at any level of XML file)
         min. 4 levels of nesting
-    1x XML Schema that defines
+    1x XML Schema that defines (CHECK)
         30 different elements (30 unique element names),
         10 unique attributes
         5 custom, different restrictions (not generated)

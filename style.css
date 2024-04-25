@@ -19,6 +19,10 @@ footer {
     border-bottom: none;
 }
 
+ul, ol {
+    list-style-type: none;
+}
+
 nav ul, footer ul {
     list-style: none;
     padding: 0; /* Remove default padding */
@@ -75,8 +79,6 @@ article {
     margin-bottom: 40px; /* Increase bottom margin to create more space */
 }
 
-
-
 #events {
     margin-top: 50px; /* Increased distance from the text above */
 }
@@ -103,11 +105,11 @@ article {
     color: #ccc; /* Lighter text color for better readability */
 }
 
-footer a {
+a {
     color: #999;
     text-decoration: underline; /* Underline to signify link */
 }
 
-footer a:hover {
+a:hover {
     color: #fff; /* White color on hover for visibility */
 }

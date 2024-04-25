@@ -1,46 +1,136 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
     <xs:element name="newsSite">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="articles">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="article" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="title" type="xs:string"/>
-                                        <xs:element name="metadata">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="author" type="xs:string"/>
-                                                    <xs:element name="date" type="xs:date"/>
-                                                    <xs:element name="category" type="xs:string"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="content">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="summary" type="xs:string"/>
-                                                    <xs:element name="details">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="point" type="xs:string" maxOccurs="unbounded"/>
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                    <xs:attribute name="id" type="xs:integer" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="articles" type="articleListType"/>
+                <xs:element name="reviews" type="reviewListType"/>
             </xs:sequence>
+            <xs:attribute name="name" type="nonEmptyString"/>
         </xs:complexType>
     </xs:element>
-</xs:schema>
 
+    <!-- Articles definition -->
+    <xs:complexType name="articleListType">
+        <xs:sequence>
+            <xs:element name="article" type="articleType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Single article definition -->
+    <xs:complexType name="articleType">
+        <xs:sequence>
+            <xs:element name="title" type="nonEmptyString"/>
+            <xs:element name="metadata" type="metadataType"/>
+            <xs:element name="content" type="contentType"/>
+            <xs:element name="editor" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="contributor" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="publicationDate" type="xs:date"/>
+            <xs:element name="updateDate" type="xs:date" minOccurs="0"/>
+            <xs:element name="relatedArticle" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="comment" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="source" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="image" type="nonEmptyString" minOccurs="0"/>
+            <xs:element name="video" type="nonEmptyString" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="positiveInteger" use="required"/>
+        <xs:attribute name="language" type="languageCode" default="en"/>
+        <xs:attribute name="imageSrc" type="uriType"/>
+        <xs:attribute name="videoSrc" type="uriType"/>
+    </xs:complexType>
+
+    <!-- Metadata definition -->
+    <xs:complexType name="metadataType">
+        <xs:sequence>
+            <xs:element name="author" type="nonEmptyString"/>
+            <xs:element name="datePublished" type="restrictedDateRange"/>
+            <xs:element name="dateModified" type="restrictedDateRange" minOccurs="0"/>
+            <xs:element name="category" type="restrictedCategory"/>
+            <xs:element name="tags" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="publisher" type="nonEmptyString"/>
+        </xs:sequence>
+        <xs:attribute name="status" type="nonEmptyString"/>
+    </xs:complexType>
+
+    <!-- Content definition -->
+    <xs:complexType name="contentType">
+        <xs:sequence>
+            <xs:element name="summary" type="nonEmptyString"/>
+            <xs:element name="details" type="detailsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Details definition -->
+    <xs:complexType name="detailsType">
+        <xs:sequence>
+            <xs:element name="point" type="nonEmptyString" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Reviews definition -->
+    <xs:complexType name="reviewListType">
+        <xs:sequence>
+            <xs:element name="review" type="reviewType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Single review definition -->
+    <xs:complexType name="reviewType">
+        <xs:sequence>
+            <xs:element name="title" type="nonEmptyString"/>
+            <xs:element name="reviewer" type="nonEmptyString"/>
+            <xs:element name="rating" type="xs:decimal"/>
+            <xs:element name="reviewBody" type="nonEmptyString"/>
+            <xs:element name="gameReviewed" type="nonEmptyString"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="restrictedDateRange" use="required"/>
+        <xs:attribute name="length" type="positiveInteger"/>
+        <xs:attribute name="editorRole" type="nonEmptyString"/>
+        <xs:attribute name="contributorRole" type="nonEmptyString"/>
+        <xs:attribute name="commentCount" type="xs:nonNegativeInteger"/>
+    </xs:complexType>
+
+    <!-- Custom Restrictions -->
+    <xs:simpleType name="nonEmptyString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/> <!-- Custom Restriction 1 -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="positiveInteger">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/> <!-- Custom Restriction 2 -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="languageCode">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]{2}"/> <!-- Custom Restriction 3 -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="uriType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="https?://.+"/> <!-- Custom Restriction 4 -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="restrictedDateRange">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="2000-01-01"/> <!-- Custom Restriction 5 -->
+            <xs:maxInclusive value="2024-12-31"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="restrictedCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="News"/>
+            <xs:enumeration value="Updates"/>
+            <xs:enumeration value="Reviews"/>
+            <xs:enumeration value="Opinions"/>
+            <xs:enumeration value="Announcements"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
