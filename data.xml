@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <newsSite name="Video Game News">
     <articles>
-        <!-- Article 1 -->
+        <!-- Article part starts here -->
         <article id="1" language="en">
             <title>New Game Release: Kingdom Come Deliverance 2</title>
             <metadata status="published">
@@ -18,7 +18,7 @@
             </content>
             <datePublished>2024-04-18</datePublished>
         </article>
-        <!-- Article 2 -->
+
         <article id="2" language="en">
             <title>Overwatch 2 April Balance Patch</title>
             <metadata status="published">
@@ -35,7 +35,7 @@
             </content>
             <datePublished>2024-04-17</datePublished>
         </article>
-        <!-- Article 3 -->
+
         <article id="3" language="en">
             <title>Tips and Tricks for Winning in Fortnite</title>
             <metadata status="published">
@@ -52,7 +52,7 @@
             </content>
             <datePublished>2024-04-19</datePublished>
         </article>
-        <!-- Article 4 -->
+
         <article id="4" language="en">
             <title>Cyberpunk 2077 Expansion Revealed</title>
             <metadata status="published">
@@ -69,7 +69,7 @@
             </content>
             <datePublished>2024-04-20</datePublished>
         </article>
-        <!-- Article 5 -->
+
         <article id="5" language="en">
             <title>League of Legends Season Update</title>
             <metadata status="published">
@@ -87,16 +87,16 @@
             <datePublished>2024-04-22</datePublished>
         </article>
     </articles>
+    <!-- Review part starts here -->
     <reviews>
-        <!-- Review 1 -->
         <review id="1" date="2024-04-20">
-            <title>"Kingdom Come Deliverance 2" - A New Adventure Awaits</title>
+            <title>Kingdom Come Deliverance 2 - A New Adventure Awaits</title>
             <reviewer>Toby Fox</reviewer>
             <rating>4.5</rating>
             <reviewBody>Stunning graphics and an engaging storyline make this RPG a must-play.</reviewBody>
             <gameReviewed>Kingdom Come Deliverance 2</gameReviewed>
         </review>
-        <!-- Review 2 -->
+
         <review id="2" date="2024-04-21">
             <title>Exploring the Universe in 'Starfield'</title>
             <reviewer>Lebron James</reviewer>
@@ -104,9 +104,9 @@
             <reviewBody>Bethesda's latest RPG offers a vast universe to explore, rich with diverse planets and lifeforms.</reviewBody>
             <gameReviewed>Starfield</gameReviewed>
         </review>
-        <!-- Review 3 -->
+
         <review id="3" date="2024-04-22">
-            <title>"League of Legends Season Update" - Strategic Refresh</title>
+            <title>League of Legends Season Update - Strategic Refresh</title>
             <reviewer>Conor McGregor</reviewer>
             <rating>4.3</rating>
             <reviewBody>The latest season update brings refreshing changes to the strategic depth of League of Legends.</reviewBody>

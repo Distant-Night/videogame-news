@@ -1,64 +1,74 @@
 {
-  "articles": [
-    {
-      "id": "1",
-      "title": "New Game Release: Kingdom Come Deliverance 2",
-      "author": "Dmytro Bailuk",
-      "date": "2024-04-18",
-      "category": "New Releases",
-      "summary": "The sequel to the Czech historical RPG is here, featuring an overhauled combat system and expanded world.",
-      "details": [
-        "Delve into a narrative rich in history and enhanced with a dynamic ecosystem that challenges even veteran players.",
-        "Explore vast landscapes and engage in more complex interactions with characters driven by sophisticated AI."
-      ]
-    },
-    {
-      "id": "2",
-      "title": "Overwatch 2 April Balance Patch",
-      "author": "Alikhanov Miras",
-      "date": "2024-04-17",
-      "category": "Updates",
-      "summary": "Blizzard's latest patch introduces a new map and adjusts character abilities to enhance gameplay balance.",
-      "details": [
-        "The update aims to refine gameplay mechanics, focusing on fair play and competitive integrity.",
-        "Overwatch enthusiasts will find the game increasingly rewarding with these thoughtful balance tweaks."
-      ]
-    },
-    {
-      "id": "3",
-      "title": "Tips and Tricks for Winning in Fortnite",
-      "author": "Jane Doe",
-      "date": "2024-04-19",
-      "category": "Strategy Guides",
-      "summary": "Discover expert building strategies and weapon selection to dominate in Fortnite's dynamic battlefields.",
-      "details": [
-        "Master the art of quick build battles and learn the secrets behind successful loot strategies that can give you an edge over the competition.",
-        "This guide offers essential tactics that are crucial for survival and victory."
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Cyberpunk 2077 Expansion Revealed",
-      "author": "Casey Smith",
-      "date": "2024-04-20",
-      "category": "Announcements",
-      "summary": "CD Projekt Red unveils a massive expansion for Cyberpunk 2077, promising new storylines and tech upgrades.",
-      "details": [
-        "The expansion promises to address previous gameplay issues and expand the narrative to include new districts within Night City.",
-        "Fans can expect enhanced graphics and more immersive story elements that deepen the Cyberpunk experience."
-      ]
-    },
-    {
-      "id": "5",
-      "title": "League of Legends Season Update",
-      "author": "Emily Nguyen",
-      "date": "2024-04-22",
-      "category": "Game Updates",
-      "summary": "Riot Games rolls out the new season update for League of Legends, featuring major gameplay changes and character tweaks.",
-      "details": [
-        "This update introduces new champions and rebalances existing ones to shake up the meta, aiming to improve the competitive scene and overall player engagement.",
-        "Innovative champion designs and smarter gameplay mechanics enhance the tactical aspects of the game."
-      ]
-    }
-  ]
+"articles": [{
+  "id": "1",
+  "title": "New Game Release: Kingdom Come Deliverance 2",
+  "author": "Dmytro Bailuk",
+  "datePublished": "2024-04-18",
+  "category": "New Releases",
+  "summary": "The sequel to the Czech historical RPG is here, featuring an overhauled combat system and expanded world.",
+  "details": ["Delve into a narrative rich in history and enhanced with a dynamic ecosystem that challenges even veteran players.", "Explore vast landscapes and engage in more complex interactions with characters driven by sophisticated AI."]
+},
+{
+  "id": "2",
+  "title": "Overwatch 2 April Balance Patch",
+  "author": "Alikhanov Miras",
+  "datePublished": "2024-04-17",
+  "category": "Updates",
+  "summary": "Blizzard's latest patch introduces a new map and adjusts character abilities to enhance gameplay balance.",
+  "details": ["The update aims to refine gameplay mechanics, focusing on fair play and competitive integrity.", "Overwatch enthusiasts will find the game increasingly rewarding with these thoughtful balance tweaks."]
+},
+{
+  "id": "3",
+  "title": "Tips and Tricks for Winning in Fortnite",
+  "author": "Jane Doe",
+  "datePublished": "2024-04-19",
+  "category": "Opinions",
+  "summary": "Discover expert building strategies and weapon selection to dominate in Fortnite's dynamic battlefields.",
+  "details": ["Master the art of quick build battles and learn the secrets behind successful loot strategies that can give you an edge over the competition.", "This guide offers essential tactics that are crucial for survival and victory."]
+},
+{
+  "id": "4",
+  "title": "Cyberpunk 2077 Expansion Revealed",
+  "author": "Casey Smith",
+  "datePublished": "2024-04-20",
+  "category": "Announcements",
+  "summary": "CD Projekt Red unveils a massive expansion for Cyberpunk 2077, promising new storylines and tech upgrades.",
+  "details": ["The expansion promises to address previous gameplay issues and expand the narrative to include new districts within Night City.", "Fans can expect enhanced graphics and more immersive story elements that deepen the Cyberpunk experience."]
+},
+{
+  "id": "5",
+  "title": "League of Legends Season Update",
+  "author": "Emily Nguyen",
+  "datePublished": "2024-04-22",
+  "category": "Updates",
+  "summary": "Riot Games rolls out the new season update for League of Legends, featuring major gameplay changes and character tweaks.",
+  "details": ["This update introduces new champions and rebalances existing ones to shake up the meta.", "The update aims to improve the competitive scene and overall player engagement."]
+}]
+, "reviews": [{
+  "id": "1",
+  "title": "Kingdom Come Deliverance 2 - A New Adventure Awaits",
+  "reviewer": "Toby Fox",
+  "date": "2024-04-20",
+  "rating": "4.5",
+  "reviewBody": "Stunning graphics and an engaging storyline make this RPG a must-play.",
+  "gameReviewed": "Kingdom Come Deliverance 2"
+},
+{
+  "id": "2",
+  "title": "Exploring the Universe in 'Starfield'",
+  "reviewer": "Lebron James",
+  "date": "2024-04-21",
+  "rating": "4.2",
+  "reviewBody": "Bethesda's latest RPG offers a vast universe to explore, rich with diverse planets and lifeforms.",
+  "gameReviewed": "Starfield"
+},
+{
+  "id": "3",
+  "title": "League of Legends Season Update - Strategic Refresh",
+  "reviewer": "Conor McGregor",
+  "date": "2024-04-22",
+  "rating": "4.3",
+  "reviewBody": "The latest season update brings refreshing changes to the strategic depth of League of Legends.",
+  "gameReviewed": "League of Legends"
+}]
 }
