@@ -25,8 +25,7 @@
             <xs:element name="metadata" type="metadataType"/>
             <xs:element name="content" type="contentType"/>
             <xs:element name="editor" type="nonEmptyString" minOccurs="0"/>
-            <xs:element name="contributor" type="nonEmptyString" minOccurs="0"/>
-            <xs:element name="publicationDate" type="xs:date"/>
+            <xs:element name="datePublished" type="xs:date"/>
             <xs:element name="updateDate" type="xs:date" minOccurs="0"/>
             <xs:element name="relatedArticle" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="comment" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
@@ -44,8 +43,6 @@
     <xs:complexType name="metadataType">
         <xs:sequence>
             <xs:element name="author" type="nonEmptyString"/>
-            <xs:element name="datePublished" type="restrictedDateRange"/>
-            <xs:element name="dateModified" type="restrictedDateRange" minOccurs="0"/>
             <xs:element name="category" type="restrictedCategory"/>
             <xs:element name="tags" type="nonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="publisher" type="nonEmptyString"/>
@@ -125,7 +122,7 @@
 
     <xs:simpleType name="restrictedCategory">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="News"/>
+            <xs:enumeration value="New Releases"/>
             <xs:enumeration value="Updates"/>
             <xs:enumeration value="Reviews"/>
             <xs:enumeration value="Opinions"/>
