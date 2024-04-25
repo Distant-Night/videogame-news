@@ -90,30 +90,35 @@
     </xs:complexType>
 
     <!-- Custom Restrictions -->
+    <!-- Restricts a string to be at least one character long -->
     <xs:simpleType name="nonEmptyString">
         <xs:restriction base="xs:string">
             <xs:minLength value="1"/>
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- Ensures that the value of an integer is higher than one (for IDs and such) -->
     <xs:simpleType name="positiveInteger">
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="1"/>
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- Ensures that the characters used are all within the ISO 639-1 language code -->
     <xs:simpleType name="languageCode">
         <xs:restriction base="xs:string">
             <xs:pattern value="[a-z]{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- States that a URI must be stated with http:// or https:// first -->
     <xs:simpleType name="uriType">
         <xs:restriction base="xs:anyURI">
             <xs:pattern value="https?://.+"/>
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- Limits dates to values that make sense based on the website's foundation date -->
     <xs:simpleType name="restrictedDateRange">
         <xs:restriction base="xs:date">
             <xs:minInclusive value="2000-01-01"/>
@@ -121,6 +126,7 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- Restricts categories to the selected few values -->
     <xs:simpleType name="restrictedCategory">
         <xs:restriction base="xs:string">
             <xs:enumeration value="New Releases"/>
