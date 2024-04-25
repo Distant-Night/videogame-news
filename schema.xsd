@@ -81,6 +81,7 @@
             <xs:element name="reviewBody" type="nonEmptyString"/>
             <xs:element name="gameReviewed" type="nonEmptyString"/>
         </xs:sequence>
+        <xs:attribute name="id" type="positiveInteger" use="required"/>
         <xs:attribute name="date" type="restrictedDateRange" use="required"/>
         <xs:attribute name="length" type="positiveInteger"/>
         <xs:attribute name="editorRole" type="nonEmptyString"/>
